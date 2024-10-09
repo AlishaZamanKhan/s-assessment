@@ -1,0 +1,10 @@
+html, body {
+  height: 100%; /* Ensure full height for centering */
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content */
+}

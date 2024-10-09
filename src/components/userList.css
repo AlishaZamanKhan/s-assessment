@@ -1,0 +1,69 @@
+.user-list {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+  padding: 0;
+  width: 100%;
+}
+
+.user-list-header {
+  display: flex;
+  font-weight: bold;
+  background-color: #f7f7f7;
+  padding: 10px;
+  border-bottom: 2px solid #ccc;
+}
+
+.header-item {
+  flex: 1; /* Equal width for each column */
+  padding: 10px; /* Increased padding for better spacing */
+  cursor: pointer; /* Pointer cursor for sorting */
+  text-align: center; /* Center align text */
+}
+
+.user-list-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  transition: background-color 0.3s;
+}
+
+.user-list-item:hover {
+  background-color: #f0f0f0; /* Highlight on hover */
+}
+
+.user-info {
+  flex: 1; /* Equal width for each info cell */
+  padding: 5px;
+  text-align: center; /* Center align text */
+}
+
+.user-actions {
+  display: flex;
+  flex-direction: column; /* Stack buttons vertically */
+  gap: 5px; /* Space between buttons */
+}
+
+.edit-button,
+.delete-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.edit-button:hover {
+  background-color: #0056b3; /* Darker blue for edit button */
+}
+
+.delete-button {
+  background-color: #dc3545; /* Red for delete button */
+}
+
+.delete-button:hover {
+  background-color: #c82333; /* Darker red for delete button */
+}
